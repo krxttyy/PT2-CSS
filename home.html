@@ -1,110 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  margin: 0;
-  font-family: Georgia;
-  background: #0a0f1f;}
-
-.topnav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  background-color: rgba(12, 20, 48, 1);
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  backdrop-filter: blur(0); /* initially no blur */
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;}
-
-
-body::before {
-  content: '';
-  display: block;
-  height: 1px;
-  margin-top: -1px;
-  position: sticky;
-  top: 0;
-}
-
-.topnav {
-  background-color: rgba(12, 20, 48, 0.85);
-  backdrop-filter: blur(5px);
-}
-
-.topnav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px 18px;
-
-  border-radius: 250px;
-  position: relative;
-
-  text-shadow:
-    0 0 4px #ffffff,
-    0 0 8px #00bfff;
-
-
-  transition: 
-    background 0.5s ease,
-    box-shadow 0.5s ease,
-    color 0.3s ease;}
-
-
-.topnav a:hover {
-  background: rgba(0, 180, 255, 0.15);
-  box-shadow:
-    0 0 8px rgba(0, 180, 255, 0.8),
-    0 0 16px rgba(0, 180, 255, 0.6),
-    inset 0 0 8px rgba(255, 255, 255, 0.2);
-  color: #ffffff;}
-
-.content {padding: 20px;
-  color: white;
-  text-align: center;}
-  
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  color: #dee7fc;
-  text-shadow:
-    0 0 5px #63bdc7,
-    0 0 10px #63bdc7,
-    0 0 20px #63bdc7,
-    0 0 40px #63bdc7;
-  margin: 20px 0;}
-  
-  
-.content img {
-  width: auto;
-  height: 90vh;
-  max-height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-</style>
+  <title>SIRENA</title>
+  <link rel="stylesheet" href="gia.css">
 </head>
-
 <body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="tale.html">The Tale</a>
+    <a href="origin.html">Behind the Legend</a>
+    <a href="about.html">My Profile</a>
+  </div>
 
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="tale.html">The Tale</a>
-  <a href="origiin.html">Behind the Legend</a>
-  <a href="about.html">My Profile</a>
-</div>
-
-<div class="content">
-   <img src="https://images.puertoparrot.com/articles/original/3_1601274976_d2b5c.png" alt="Sirena: A Mermaid Legend from Guam";>
-   <h1>SIRENA</h1>
-   <br>
-   <h5><i>the creatures of myth who lure sailors to danger with their enchanting song</i></h5>
-</div>
+  <div class="content">
+    <img src="https://images.puertoparrot.com/articles/original/3_1601274976_d2b5c.png" alt="Sirena: A Mermaid Legend from Guam">
+    <h1>SIRENA</h1>
+    <h5><i>the creatures of myth who lure sailors to danger with their enchanting song</i></h5>
+  </div>
 
 </body>
 </html>
