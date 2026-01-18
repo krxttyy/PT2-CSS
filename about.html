@@ -8,6 +8,26 @@
   .content h1 {
     font-size: 3rem;
     margin-bottom: 40px;}
+  .heart-img {
+  width: 250px;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+  --_m: radial-gradient(#000 69%, #0000 70%) 84.5% / 50%;
+  -webkit-mask-box-image: var(--_m);
+  mask-border: var(--_m);
+  
+
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+
+
+  @supports not (-webkit-mask-box-image: var(--_m)) {
+    --_m: radial-gradient(at 70% 31%,#000 29%,#0000 30%), 
+          radial-gradient(at 30% 31%,#000 29%,#0000 30%), 
+          linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+  }
 </style>
 <body>
 
@@ -28,11 +48,13 @@
     <p><strong>School:</strong> Santa Elena High School</p>
     <p><strong>Interest:</strong> Coding, web design, mythology</p>
   </div>
+   <img src="https://scontent-mnl3-2.xx.fbcdn.net/v/t1.15752-9/462654318_908892074659429_2385734820772559951_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEDGbBRQdF1-1wznaqA2s-RD6aOFMQ3j90Ppo4UxDeP3XImAB3yjTJbkQzOn3oAsoJwEhAfu2wRg4qg7o9KFi9x&_nc_ohc=VgCT7ZzkdrMQ7kNvwF-Ukpr&_nc_oc=AdleIN7Lw218yXRL_RrAqXwJ8IbVNS-obfqM3cA7TtaVNV9ULtyiQmwnTrXG9G8Da14&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&oh=03_Q7cD4QFm0TycRuG8hJK94A9dVgzHHk0g-_giWQYKMNfZPezITg&oe=699459A3" alt="Description of image" class="heart-img">
 </div>
 
 </body>
 
 
 </html>
+
 
 
