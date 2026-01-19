@@ -156,5 +156,17 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
 }
 
+.hero-image {
+  background-image: url("https://images.puertoparrot.com/articles/original/3_1601274976_d2b5c.png");
+  height: 290px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
